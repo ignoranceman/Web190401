@@ -7,6 +7,10 @@
 <body>
 <form action="001.html" method=“get”>
     <table>
+        <tr>
+            <td align="right"><label for="error">显示错误的地方：</label></td>
+            <td><input id="error" name="error" type="hidden"/></td>
+        </tr>
 
         <tr>
             <td align="right">
@@ -60,19 +64,23 @@
             </td>
         </tr>
         <tr>
-            <td align="right">
-                <label for="teacher">教师选择：</label>
-            </td>
+            <td align="right"><label>选择老师：</label></td>
             <td>
-                <textarea cols="100" rows="10" id="teacher"></textarea>
+                <select value="1">
+                    <option value="1" selected="selected">吴老师</option>
+                    <option value="2">李老师</option>
+                    <option value="3">张老师</option>
+                    <option value="4">王老师</option>
+                    <option value="4">赵老师</option>
+                </select>
             </td>
         </tr>
         <tr>
-            <td align="center">
-                <input type="reset" value="重置">
-            </td>
-            <td>
-                <input type="submit" value="提交">
+            <td colspan="2" align="center">
+                <input type="button" value="按钮"/>
+                <input type="reset" value="重置"/>
+                <input type="submit" value="提交"/>
+                <input type="image" src="../img/icon4.png" value="按钮"/>
             </td>
         </tr>
     </table>
