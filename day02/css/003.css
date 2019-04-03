@@ -1,0 +1,35 @@
+#aId {
+    color: chartreuse;
+}
+
+.aColor {
+    color: blue;
+}
+
+a {
+    color: red;
+}
+
+* {
+    color: aqua;
+}
+
+#aId:hover {
+    color: blueviolet;
+}
+
+#aId:active {
+    color: coral;
+}
+
+.p {
+    color: darkolivegreen;
+}
+
+.p div {
+    color: darkcyan;
+}
+
+.p .s div {
+    color: cyan;
+}

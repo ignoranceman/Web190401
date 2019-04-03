@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #009bff;
+            background-color: cyan;
+        }
+
+        div .sub {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #009bff;
+            background-color: darkcyan;
+            margin-left: 49px;
+            margin-top: 49px;
+        }
+
+        div .sub .ssub {
+            width: 50px;
+            height: 50px;
+            background-color: lightskyblue;
+            border: 1px solid #009bff;
+            margin-left: 24px;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="sub">
+        <div class="ssub"></div>
+    </div>
+</div>
+</body>
+</html>

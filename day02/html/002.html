@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式表加载顺序</title>
+    <style type="text/css">
+        #aId {
+            color: chartreuse;
+        }
+
+        .aColor {
+            color: blue;
+        }
+
+        a {
+            color: red;
+        }
+
+        * {
+            color: aqua;
+        }
+
+        #aId:hover {
+            color: blueviolet;
+        }
+
+        #aId:active {
+            color: coral;
+        }
+        .p{
+            color: darkolivegreen;
+        }
+        .p div{
+            color: darkcyan;
+        }
+        .p .s div{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+<a id="aId" class="aColor" href="001.html">跳转到001.html</a>
+<div class="p">
+    aaaaaaaaaa
+    <div class="s">bbbbbbbb
+        <div class="ss">cccccccc</div>
+    </div>
+</div>
+</body>
+</html>
